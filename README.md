@@ -22,29 +22,19 @@ I intentionally wrote all the code in a clean, self-contained, and pragmatic sty
 
 ## Repository Structure
 
-Inside this repository, you will find both the **merged master source code deliverables** (`SOURCE_CODE.ipynb` and `SOURCE_CODE.py`), the **individual standalone problem files**, detailed markdown reports, and all generated figures:
+Inside this repository, you will find the **master source code deliverables** (`SOURCE_CODE.ipynb` and `SOURCE_CODE.py`), detailed markdown reports, and all generated figures:
 
 ```
 .
+├── README.md                           # Master project guide, setup, validation design & trade-offs
+├── DATA.md                             # Detailed raw data audit, quality findings & cleaning rules
+├── RESULTS.md                          # Full analysis of EDA, model metrics, and failure modes
+├── Recommendation.md                   # One-page utility-facing summary & Section 4 answers
 │
-├── SOURCE_CODE.ipynb                 # Master integrated notebook with all 4 problems & inline figures
-├── SOURCE_CODE.py                    # Master end-to-end Python script (Runs all 4 parts in ~60s)
-├── pipeline_end_to_end.py            # Complete end-to-end automated pipeline
-├── REFIT_End_to_End_Pipeline.ipynb   # Interactive end-to-end notebook
+├── SOURCE_CODE.ipynb                   # Master interactive notebook with all 4 problems & inline figures
+├── SOURCE_CODE.py                      # Master end-to-end Python script (Runs all 4 parts in ~60s)
 │
-├── problem1_raw_cleaning.py          # Standalone script for Problem 1 (House 1 raw cleaning)
-├── Problem1_Raw_Data_Cleaning.ipynb  # Interactive notebook for Problem 1
-│
-├── problem2_washing_machine_eda.py   # Standalone script for Problem 2 (EDA on Houses 1, 2, 3, 5)
-├── Problem2_Washing_Machine_EDA.ipynb# Interactive notebook for Problem 2
-│
-├── problem3_disaggregation.py        # Standalone script for Problem 3 (NILM model & evaluation)
-├── Problem3_Disaggregation.ipynb     # Interactive notebook for Problem 3
-│
-├── problem4_practical_implications.py# Standalone script for Problem 4 (Utility savings & simulations)
-├── Problem4_Practical_Implications.ipynb # Interactive notebook for Problem 4
-│
-├── figures/                          # All 8 generated high-resolution plots
+├── figures/                            # All 8 generated high-resolution plots
 │   ├── problem1_before_after_cleaning.png
 │   ├── problem1_outage_spike_handling.png
 │   ├── problem2_24h_trace.png
@@ -54,9 +44,8 @@ Inside this repository, you will find both the **merged master source code deliv
 │   ├── problem3_failure_analysis.png
 │   └── problem4_sampling_resolution_impact.png
 │
-├── DATA.md                           # Detailed raw data audit, quality findings & cleaning rules
-├── RESULTS.md                        # Full analysis of EDA, model metrics, and failure modes
-└── Recommendation.md                 # One-page utility-facing summary & Section 4 answers
+├── house1_cleaned_1min.parquet         # Cleaned 1-minute House 1 dataset (ready-to-use)
+└── .gitignore                          # Git ignore configuration
 ```
 
 ---
@@ -78,7 +67,6 @@ If you just want to run the whole pipeline from beginning to end, run:
 ```bash
 python SOURCE_CODE.py
 ```
-*(You can also run `python pipeline_end_to_end.py`)*  
 This script executes all 4 parts, prints clean summary tables in your terminal, and saves all 8 figures into the `figures/` folder. It takes roughly **60 to 75 seconds** on a standard laptop.
 
 You can also open [`SOURCE_CODE.ipynb`](SOURCE_CODE.ipynb) in JupyterLab or VS Code to step through each code cell and view the charts inline.

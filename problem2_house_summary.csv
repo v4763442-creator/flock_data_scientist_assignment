@@ -1,5 +1,0 @@
-House,Appliance Model,Days Monitored,Missing Data (%),Off/Zero Time (%),Total Cycles,Cycles / Week,Median Duration (min),Median Peak Power (W),Median Energy (kWh)
-House 1,Beko WMC6140,639.0,12.32,98.12,404,4.43,33.0,2327.1,0.309
-House 2,LG F1289TD,617.4,24.3,95.31,326,3.7,97.0,2091.7,0.613
-House 3,Washing Machine,614.6,11.2,94.33,663,7.55,65.0,1924.9,0.546
-House 5,AEG L99695HWD,648.3,8.72,92.12,651,7.03,44.0,2083.5,0.318
