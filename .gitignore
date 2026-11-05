@@ -1,0 +1,24 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Logs & temp files
+*.log
+*.tmp

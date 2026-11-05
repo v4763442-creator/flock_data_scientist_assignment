@@ -1,0 +1,4 @@
+Model,MAE (W),RMSE (W),Precision,Recall,F1-Score,Actual Energy (kWh),Est. Energy (kWh),Energy Acc (%)
+1. Always-Off Baseline,10.62,135.82,0.0,0.0,0.0,28.25,0.0,0.0
+2. Usage-Profile Baseline,20.44,134.79,0.047,0.729,0.089,28.25,28.73,98.3
+3. Disaggregation Model (GBDT),12.32,99.89,0.249,0.748,0.374,28.25,27.39,97.0
