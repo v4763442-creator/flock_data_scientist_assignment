@@ -179,11 +179,6 @@ No model is perfect, and I made sure to clearly document where the model struggl
 
 ---
 
-## Transparent Statement on AI Tools Used
-
-In accordance with ethical engineering guidelines and assessment instructions:
-- All pipeline logic, deduplication rules, physical electrical limits, cycle detection thresholds, and domain interpretations were verified, tested, and validated through antigravity llm by me against the REFIT research literature and raw data findings.
-
 ---
 
 ## Possible Improvements if I Had More Time
