@@ -161,11 +161,5 @@ I generated two high-resolution verification plots (saved in `figures/`):
 
 ---
 
-## 6. Remaining Data Concerns & Limitations
 
-Even after thorough cleaning, anyone working with the REFIT dataset should be aware of a few inherent limitations:
-
-1. **Unmonitored Appliances in the Aggregate Signal:**
-   The REFIT study sub-metered the 9 largest domestic consumers in each home. However, high-power intermittent appliances like electric kettles (2.5–3 kW), toasters, hair dryers, and electric showers were plugged into unmonitored wall sockets. Their electrical pulses still show up in the aggregate mains reading, which makes non-intrusive disaggregation challenging.
-2. **Asynchronous Sensor Lag:**
    Because each plug transmitted independently over radio, a surge in the washing machine might be logged at second `:12`, while the whole-home mains clamp might log that same surge at second `:14`. Resampling to 1-minute bins effectively synchronizes them, but sub-minute transient phase analysis is lost.
