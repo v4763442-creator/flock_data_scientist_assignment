@@ -180,9 +180,3 @@ No model is perfect, and I made sure to clearly document where the model struggl
 ---
 
 ---
-
-## Possible Improvements if I Had More Time
-
-1. **Reactive Power (VAR) Integration:** If smart meters record reactive power, we can measure phase shifts ($\cos \phi$) to instantly separate inductive electric motors from purely resistive kettles.
-2. **Sequence-to-Point (Seq2Point) 1D-CNN:** Training a 1D convolutional neural network with a 60-minute sliding window would better capture the multi-stage narrative of wash $\rightarrow$ rinse $\rightarrow$ spin.
-3. **Cross-Household Training:** Training on a combined multi-house dataset to evaluate how well the model generalizes to homes it has never seen before.
